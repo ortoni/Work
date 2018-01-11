@@ -2,30 +2,46 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27914" started-at="2018-01-11T09:32:42Z" finished-at="2018-01-11T09:33:10Z">
+  <suite name="Default suite" duration-ms="11739" started-at="2018-01-11T11:54:07Z" finished-at="2018-01-11T11:54:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27914" started-at="2018-01-11T09:32:42Z" finished-at="2018-01-11T09:33:10Z">
-      <class name="leaf.Lead.UploadUsingFF">
-        <test-method status="FAIL" signature="sma()[pri:0, instance:leaf.Lead.UploadUsingFF@5fc7f7]" name="sma" duration-ms="27898" started-at="2018-01-11T15:02:42Z" finished-at="2018-01-11T15:03:10Z">
+    <test name="Default test" duration-ms="11739" started-at="2018-01-11T11:54:07Z" finished-at="2018-01-11T11:54:19Z">
+      <class name="freeCRM.Crm">
+        <test-method status="FAIL" signature="crmFree()[pri:0, instance:freeCRM.Crm@194a1b5]" name="crmFree" duration-ms="11691" started-at="2018-01-11T17:24:07Z" finished-at="2018-01-11T17:24:19Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[The element is not focusable (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[unknown error: Failed to find extension with id https://www.freecrm.com/index.html.
+JavaScript stack:
+Error: Failed to find extension with id https://www.freecrm.com/index.html.
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:85:5)
+    at safeCallbackApply (extensions::uncaught_exception_handler:27:15)
+    at handleResponse (extensions::sendRequest:67:7)
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'DESKTOP-23TDLJK', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 41.16299.15.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
-Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\TestLeaf\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: 10d565055d0d323a9bdf9704b750dd8f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: The element is not focusable (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Failed to find extension with id https://www.freecrm.com/index.html.
+JavaScript stack:
+Error: Failed to find extension with id https://www.freecrm.com/index.html.
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:85:5)
+    at safeCallbackApply (extensions::uncaught_exception_handler:27:15)
+    at handleResponse (extensions::sendRequest:67:7)
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'DESKTOP-23TDLJK', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 41.16299.15.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
-Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\TestLeaf\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: 10d565055d0d323a9bdf9704b750dd8f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -38,9 +54,8 @@ Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at leaf.Lead.UploadUsingFF.sma(UploadUsingFF.java:54)
+	at org.openqa.selenium.chrome.ChromeDriver.launchApp(ChromeDriver.java:236)
+	at freeCRM.Crm.crmFree(Crm.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,8 +85,8 @@ Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sma -->
-      </class> <!-- leaf.Lead.UploadUsingFF -->
+        </test-method> <!-- crmFree -->
+      </class> <!-- freeCRM.Crm -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

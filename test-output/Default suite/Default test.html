@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 11 15:02:42 IST 2018</td>
+<td>Started on:</td><td>Thu Jan 11 17:24:07 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27914 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11739 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='leaf.Lead.UploadUsingFF.sma()'><b>sma</b><br>Test class: leaf.Lead.UploadUsingFF</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: The element is not focusable (WARNING: The server did not provide any stacktrace information)
+<td title='freeCRM.Crm.crmFree()'><b>crmFree</b><br>Test class: freeCRM.Crm</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Failed to find extension with id https://www.freecrm.com/index.html.
+JavaScript stack:
+Error: Failed to find extension with id https://www.freecrm.com/index.html.
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:85:5)
+    at safeCallbackApply (extensions::uncaught_exception_handler:27:15)
+    at handleResponse (extensions::sendRequest:67:7)
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
 System info: host: &apos;DESKTOP-23TDLJK&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 41.16299.15.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
-Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\TestLeaf\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: 10d565055d0d323a9bdf9704b750dd8f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -95,9 +103,8 @@ Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at leaf.Lead.UploadUsingFF.sma(UploadUsingFF.java:54)
+	at org.openqa.selenium.chrome.ChromeDriver.launchApp(ChromeDriver.java:236)
+	at freeCRM.Crm.crmFree(Crm.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -122,14 +129,22 @@ Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2498190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2498190'><pre>org.openqa.selenium.WebDriverException: The element is not focusable (WARNING: The server did not provide any stacktrace information)
+</pre></div><a href='#' onClick='toggleBox("stack-trace20065453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20065453'><pre>org.openqa.selenium.WebDriverException: unknown error: Failed to find extension with id https://www.freecrm.com/index.html.
+JavaScript stack:
+Error: Failed to find extension with id https://www.freecrm.com/index.html.
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:85:5)
+    at safeCallbackApply (extensions::uncaught_exception_handler:27:15)
+    at handleResponse (extensions::sendRequest:67:7)
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
 System info: host: &apos;DESKTOP-23TDLJK&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 41.16299.15.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
-Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\TestLeaf\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: 10d565055d0d323a9bdf9704b750dd8f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -142,9 +157,8 @@ Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at leaf.Lead.UploadUsingFF.sma(UploadUsingFF.java:54)
+	at org.openqa.selenium.chrome.ChromeDriver.launchApp(ChromeDriver.java:236)
+	at freeCRM.Crm.crmFree(Crm.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -170,8 +184,8 @@ Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 </pre></div></td>
-<td>27</td>
-<td>leaf.Lead.UploadUsingFF@5fc7f7</td></tr>
+<td>11</td>
+<td>freeCRM.Crm@194a1b5</td></tr>
 </table><p>
 </body>
 </html>

@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\TestLeaf\AppData\Local\Temp\testng-eclipse--1856335508\testng-customsuite.xml</span>
+                    <span>C:\Users\TestLeaf\AppData\Local\Temp\testng-eclipse--1516576818\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="leaf.Lead.UploadUsingFF" hash-for-method="sma">sma</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="freeCRM.Crm" hash-for-method="crmFree">crmFree</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -119,21 +119,29 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">leaf.Lead.UploadUsingFF</span>
+              <span class="class-name">freeCRM.Crm</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sma">
-                  </a> <!-- sma -->
-                  <span class="method-name">sma</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: The element is not focusable (WARNING: The server did not provide any stacktrace information)
+                  <a name="crmFree">
+                  </a> <!-- crmFree -->
+                  <span class="method-name">crmFree</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Failed to find extension with id https://www.freecrm.com/index.html.
+JavaScript stack:
+Error: Failed to find extension with id https://www.freecrm.com/index.html.
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:85:5)
+    at safeCallbackApply (extensions::uncaught_exception_handler:27:15)
+    at handleResponse (extensions::sendRequest:67:7)
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
 System info: host: &apos;DESKTOP-23TDLJK&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 41.16299.15.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
-Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\TestLeaf\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: 10d565055d0d323a9bdf9704b750dd8f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -146,9 +154,8 @@ Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at leaf.Lead.UploadUsingFF.sma(UploadUsingFF.java:54)
+	at org.openqa.selenium.chrome.ChromeDriver.launchApp(ChromeDriver.java:236)
+	at freeCRM.Crm.crmFree(Crm.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -182,7 +189,7 @@ Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\TestLeaf\AppData\Local\Temp\testng-eclipse--1856335508\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\TestLeaf\AppData\Local\Temp\testng-eclipse--1516576818\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -191,7 +198,7 @@ Session ID: 3019F642-3F3F-4383-92C2-89CAA833AC57
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;leaf.Lead.UploadUsingFF&quot;/&gt;
+      &lt;class name=&quot;freeCRM.Crm&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -233,14 +240,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sma')
-data.setCell(0, 2, 'leaf.Lead.UploadUsingFF')
-data.setCell(0, 3, 27898);
+data.setCell(0, 1, 'crmFree')
+data.setCell(0, 2, 'freeCRM.Crm')
+data.setCell(0, 3, 11691);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -266,11 +273,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">leaf.Lead.UploadUsingFF</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">freeCRM.Crm</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">sma</span>
+                <span class="method-name">crmFree</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

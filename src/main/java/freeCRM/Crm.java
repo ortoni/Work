@@ -20,10 +20,11 @@ public class Crm extends ExtReport{
 
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
+		driver.launchApp("https://www.freecrm.com/index.html");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		driver.get("https://www.freecrm.com/index.html");
+		//driver.get("https://www.freecrm.com/index.html");
 		try{
 			FileUtils.copyFile(driver.getScreenshotAs(OutputType.FILE), 
 					new File("./snap/sanp.png"));
