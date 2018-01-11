@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sikuliLearn.UploadUsingSikuli">
+      <class name="freeCRM.Crm">
         <methods>
-          <include name="sik"/>
+          <include name="crmFree"/>
         </methods>
-      </class> <!-- sikuliLearn.UploadUsingSikuli -->
+      </class> <!-- freeCRM.Crm -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -16,9 +16,9 @@ public class Crm extends ExtReport{
 	//ExtentNew ex = new ExtentNew();
 	@Test
 	public void crmFree() throws IOException{
-		startReport("crm");
+		startReport();
 
-		//System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

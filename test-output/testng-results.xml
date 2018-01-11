@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33731" started-at="2018-01-09T11:39:21Z" finished-at="2018-01-09T11:39:55Z">
+  <suite name="Default suite" duration-ms="11190" started-at="2018-01-10T11:13:43Z" finished-at="2018-01-10T11:13:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33731" started-at="2018-01-09T11:39:21Z" finished-at="2018-01-09T11:39:55Z">
-      <class name="sikuliLearn.UploadUsingSikuli">
-        <test-method status="PASS" signature="sik()[pri:0, instance:sikuliLearn.UploadUsingSikuli@1c68925]" name="sik" duration-ms="33699" started-at="2018-01-09T17:09:22Z" finished-at="2018-01-09T17:09:55Z">
+    <test name="Default test" duration-ms="11190" started-at="2018-01-10T11:13:43Z" finished-at="2018-01-10T11:13:54Z">
+      <class name="freeCRM.Crm">
+        <test-method status="PASS" signature="crmFree()[pri:0, instance:freeCRM.Crm@194a1b5]" name="crmFree" duration-ms="11170" started-at="2018-01-10T16:43:43Z" finished-at="2018-01-10T16:43:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sik -->
-      </class> <!-- sikuliLearn.UploadUsingSikuli -->
+        </test-method> <!-- crmFree -->
+      </class> <!-- freeCRM.Crm -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
