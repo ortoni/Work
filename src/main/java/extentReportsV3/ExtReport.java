@@ -24,7 +24,7 @@ public class ExtReport {
 		htmlReporter = new ExtentHtmlReporter("./reports/a.html");
 		extent = new ExtentReports ();
 		extent.attachReporter(htmlReporter);
-	/*\\\\\\\\\\\\\\\\\\	extent.setSystemInfo("Host Name", "TetLeaf");
+	/*	extent.setSystemInfo("Host Name", "TetLeaf");
 		extent.setSystemInfo("Environment", "Extent Report #3");
 		extent.setSystemInfo("User Name", "Koushik Chatterjee");
 

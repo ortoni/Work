@@ -25,44 +25,16 @@ public class Smacar3  {
 		ac.moveToElement(home).perform();
 		System.out.println(home.getCssValue("background"));
 		System.out.println(home.getCssValue("background-color"));*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		driver.findElementById("lmail").sendKeys("test002@gmail.com");
+		driver.findElementById("lmail").sendKeys("test005@gmail.com");
 		driver.findElementById("lpwd").sendKeys("leaf@123");
 		driver.findElementById("login_submit").click();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement ele = driver.findElementByXPath("//p[text()='Trial1']");
 		wait.until(ExpectedConditions.elementToBeClickable(ele));
 		ele.click();
-		driver.findElementByXPath("//div[@class='card small']//div").click();
-		driver.findElementByXPath("//h1[@class='plus']").click();
+		driver.findElementByXPath("(//div[@class='card small']//div)[1]").click();
+		Thread.sleep(3000);
+		//driver.findElementByXPath("//h1[@class='plus']").click();
 		Thread.sleep(3000);	
 		String path = "C:\\Users\\TestLeaf\\Desktop\\koushik\\SC\\\\Capture.PNG";
 

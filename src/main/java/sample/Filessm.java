@@ -3,13 +3,14 @@ package sample;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Filessm {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");	// Initializing Chrome driver
+		System.setProperty("webdriver.gecko.driver", "./driver/gecko.exe");	// Initializing Chrome driver
 
-		ChromeDriver driver = new ChromeDriver();// Creating Object for ChromeDriver
+		FirefoxDriver driver = new FirefoxDriver();// Creating Object for ChromeDriver
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
