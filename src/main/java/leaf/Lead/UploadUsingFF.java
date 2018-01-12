@@ -17,15 +17,13 @@ public class UploadUsingFF  {
 	@Test
 	public void sma() throws InterruptedException, FindFailed {
 		System.setProperty("webdriver.gecko.driver", "./driver/gecko.exe");
-		System.out.println("UploadUsingFF.sma()");
+		//System.out.println("UploadUsingFF.sma()");
 		FirefoxDriver driver = new FirefoxDriver();
 		/*System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();*/
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("https://smacar.com/studio"); 
-		/*driver.findElementById("lmail").sendKeys("test007@gmail.com");
-		driver.findElementById("lpwd").sendKeys("leaf@123");*/
+		driver.get("https://qa.smacar.com/studio"); 
 		driver.findElementById("lmail").sendKeys("test007@gmail.com");
 		driver.findElementById("lpwd").sendKeys("leaf@123");
 		driver.findElementById("login_submit").click();
@@ -38,20 +36,13 @@ public class UploadUsingFF  {
 
 		driver.findElementByXPath("(//div[@class='card small']//div)[1]").click();
 		//driver.findElementById("newTargetName").sendKeys("Marker");
-		Thread.sleep(3000);
-		/*driver.findElementByXPath("//input[@type='file']")
-		.sendKeys("E:\\Koushik\\Opentaps\\snap\\snap.png");*/
-		WebElement searchbox = driver.findElementByXPath("//input[@type='file']");
-		
-		JavascriptExecutor myExecutor = ((JavascriptExecutor) driver);
-	//	myExecutor.executeScript("document.querySelector('input[type=file]').style.visibility='‌​visible'");
-		//myExecutor.executeScript("document.querySelector('input[type=file]').value='E:\\Koushik\\Opentaps\\snap\\snap.png';");
-		Thread.sleep(5000);
-		//document.getElementsByName('q')[0].value='Kirtesh'")
-		//myExecutor.executeScript("document.getElementsByX.value='E:\\Koushik\\Opentaps\\snap\\snap.png';", searchbox);
-		
+		//Thread.sleep(3000);	
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("document.getElementsByClassName('dz-hidden-input')[0].style.visibility='visible';");
+		System.out.println(js.executeScript("return document.getElementsByClassName('dz-hidden-input')[0].style.visibility;"));
 		driver.findElementByXPath("//input[@type='file']")
 		.sendKeys("E:\\Koushik\\Opentaps\\snap\\snap.png");
+		driver.findElementById("submit-all").click();
 		
 		
 		
