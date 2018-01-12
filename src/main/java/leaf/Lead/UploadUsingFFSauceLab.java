@@ -23,30 +23,55 @@ import org.testng.annotations.Test;
 public class UploadUsingFFSauceLab  {
 	@Test
 	public void sma() throws InterruptedException, FindFailed, MalformedURLException {
-		
-		// win 10 - chrome
-		DesiredCapabilities caps = DesiredCapabilities.chrome();
+
+		// Win 10 - IE 11
+		DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
 		caps.setCapability("platform", "Windows 10");
-		caps.setCapability("version", "63.0");
-		
-		// FF - Win 10
-		
+		caps.setCapability("version", "11.103");
+		//Win 8.1 - IE 11
+		/*DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+		caps.setCapability("platform", "Windows 8.1");
+		caps.setCapability("version", "11.0");*/
+
+
+		// Win 8 - IE 10
+		/*DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+		caps.setCapability("platform", "Windows 8");
+		caps.setCapability("version", "10.0");*/
+		//unix FF - 45
+		/*
+		DesiredCapabilities caps = DesiredCapabilities.firefox();
+		caps.setCapability("platform", "Linux");
+		caps.setCapability("version", "45.0");*/
+		// Unix - Chrome 48
+
+		/*	DesiredCapabilities caps = DesiredCapabilities.chrome();
+		caps.setCapability("platform", "Linux");
+		caps.setCapability("version", "48.0");
+		 */
+		// win 10 - chrome 63
+		/*DesiredCapabilities caps = DesiredCapabilities.chrome();
+		caps.setCapability("platform", "Windows 10");
+		caps.setCapability("version", "63.0");*/
+
+		// FF 57- Win 10
+
 		/*DesiredCapabilities caps = DesiredCapabilities.firefox();
 		caps.setCapability("platform", "Windows 10");
 		caps.setCapability("version", "57.0");*/
-		
+
 		//Edge - Win 10
 		/*DesiredCapabilities caps = DesiredCapabilities.edge();
 		caps.setCapability("platform", "Windows 10");
 		caps.setCapability("version", "13.10586");*/
 		//caps.setCapability("screenResolution", "1280x1024");
-		
+
 		// Safari - macOS 10.12
-	/*	DesiredCapabilities caps = DesiredCapabilities.safari();
+		/*	DesiredCapabilities caps = DesiredCapabilities.safari();
 		caps.setCapability("platform", "macOS 10.12");
 		caps.setCapability("version", "10.1");
 		caps.setCapability("screenResolution", "2360x1770");*/
-		
+
 		// Firefox - macOS 10.13
 		/*DesiredCapabilities caps = DesiredCapabilities.firefox();
 		caps.setCapability("platform", "macOS 10.13");
@@ -87,21 +112,5 @@ public class UploadUsingFFSauceLab  {
 		ele.sendKeys(detect.getLocalFile(path).getAbsolutePath());
 		/*Thread.sleep(8000);
 		driver.close();*/
-		
-		//driver.findElementById("submit-all").click();
-
-
-
-
-
-
-
-		/*Screen screen = new Screen();
-
-		Pattern fileNameInput = new Pattern("E:\\FileName.PNG");
-		Pattern openButton = new Pattern("E:\\Open.PNG");
-		screen.wait(fileNameInput);
-		screen.type(fileNameInput, "E:\\Koushik\\Opentaps\\snap\\snap.png");
-		screen.click(openButton);*/
 	}
 }
