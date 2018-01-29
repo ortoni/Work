@@ -3,11 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="allGrid.JqueryUi">
+      <class name="allGrid.AllGrid">
         <methods>
-          <include name="frame"/>
+          <include name="gridEdge"/>
         </methods>
-      </class> <!-- allGrid.JqueryUi -->
+      </class> <!-- allGrid.AllGrid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
