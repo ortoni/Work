@@ -5,15 +5,17 @@ import java.io.FileInputStream;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
 
 public class ExcelDataProvider{
 
+	@Test
 	public String[][] getExcelData(String fileName) {
 
 		String[][] data = null ;
 
 		try {
-			FileInputStream fis = new FileInputStream("./data/"+fileName+".xlsx");
+			FileInputStream fis = new FileInputStream("./data/test.xlsx");
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
 			XSSFSheet sheet = workbook.getSheetAt(0);	
 
@@ -25,13 +27,13 @@ public class ExcelDataProvider{
 			data = new String[rowCount][columnCount];
 
 
+			String cellValue = "";
 			// loop through the rows
 			for(int i=1; i <rowCount+1; i++){
 				try {
 					XSSFRow row = sheet.getRow(i);
 					for(int j=0; j <columnCount; j++){ // loop through the columns
 						try {
-							String cellValue = "";
 							try{
 								cellValue = row.getCell(j).getStringCellValue();
 							}catch(NullPointerException e){
@@ -47,6 +49,7 @@ public class ExcelDataProvider{
 				} catch (Exception e) {
  					e.printStackTrace();
 				}
+				System.out.println(cellValue);
 			}
 			fis.close();
 			workbook.close();
