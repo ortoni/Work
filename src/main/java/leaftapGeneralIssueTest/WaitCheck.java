@@ -1,6 +1,7 @@
 package leaftapGeneralIssueTest;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,15 +24,16 @@ public class WaitCheck {
 		driver.findElementByLinkText("Find Leads").click();
 		driver.findElementByName("id").sendKeys("10650");
 		driver.findElementByXPath("//button[text()='Find Leads']").click();
-		WebElement find = driver.findElement(By.xpath("(//a[@class='linktext'])[4]"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		//js.executeScript("return !!window.jQuery && window.jQuery.active == 0");
+		js.executeScript("return(window.jQuery!=null)&&(jQuery.active==0);");//Instead of webDriver wait
+		driver.findElementByXPath("(//div[@class='x-grid3-cell-inner x-grid3-col-partyId'])[1]/a").click();
 		
-		WebDriverWait wait = new WebDriverWait(driver, 20);	
-	/*	wait.until(ExpectedConditions.elementToBeSelected(By.xpath("(//a[@class='linktext'])[4]")));
+	/*	WebDriverWait wait = new WebDriverWait(driver, 20);	
+		wait.until(ExpectedConditions.elementToBeSelected(By.xpath("(//a[@class='linktext'])[4]")));
 		//find.click();
 		driver.findElement(By.xpath("(//a[@class='linktext'])[4]")).click();
-		
-*/
-		wait.until(ExpectedConditions.elementToBeClickable(find)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(find)).click();*/
 	}
 
 

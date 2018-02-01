@@ -15,7 +15,7 @@ public class UploadUsingSendKeys {
 		//System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");	// Initializing Chrome driver
 		System.setProperty("webdriver.gecko.driver", "./Driver/geckodriver.exe");
 		FirefoxOptions op = new FirefoxOptions();
-		op.setHeadless(true);
+	//	op.setHeadless(true);
 		FirefoxDriver driver = new FirefoxDriver(op);	// Creating Object for ChromeDriver
 		
 		

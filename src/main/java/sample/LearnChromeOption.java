@@ -13,7 +13,7 @@ public class LearnChromeOption {
 		ch.addArguments("disable-infobars");
 		ch.addArguments("start-maximized");
 		ch.addArguments("--disable-popup-blocking");
-		ChromeOptions a= ch.setUnhandledPromptBehaviour(null);
+		//ChromeOptions a= ch.setUnhandledPromptBehaviour(null);
 		//ch.addArguments("--silent-launch");
 		ch.addArguments("--screenshot");
 		ChromeDriver driver = new ChromeDriver(ch);
