@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
 public class AllGrid {
-	@Test
+	/*	@Test
 	public void gridEdge() throws MalformedURLException{
 		DesiredCapabilities caps = DesiredCapabilities.safari();
 		caps.setCapability("platform", "macOS 10.12");
@@ -19,8 +19,8 @@ public class AllGrid {
 				new URL("http://192.168.121.255:4444/wd/hub"), caps);
 		driver.get("https://www.google.com");
 	}
-	
-/*	@Test
+	 */
+	/*@Test
 	public void gridEdge() throws MalformedURLException{
 		//System.setProperty("webdriver.edge.driver", "./driver/edge.exe");
 		//new DesiredCapabilities();
@@ -28,9 +28,10 @@ public class AllGrid {
 		dc.setBrowserName("MicrosoftEdge");
 		dc.setPlatform(Platform.WINDOWS);		
 		RemoteWebDriver driver = new RemoteWebDriver(
-				new URL("http://192.168.1.32:4444/wd/hub"), dc);
+				new URL("http://192.168.1.9:44/wd/hub"), dc);
 		driver.get("https://www.google.com");
-	}
+	}*/
+	/*
 	@Test
 	public void gridFox() throws MalformedURLException{
 		//System.setProperty("webdriver.edge.driver", "./driver/edge.exe");
@@ -39,22 +40,33 @@ public class AllGrid {
 		//dc.setBrowserName("MicrosoftEdge");
 		dc.setBrowserName("firefox");
 		dc.setPlatform(Platform.WINDOWS);
-		
+
 		RemoteWebDriver driver = new RemoteWebDriver(
 				new URL("http://192.168.1.32:4444/wd/hub"), dc);
 		driver.get("https://www.google.com");
-	}
-
-	@Test
+	}*/
+	/*@Test
 	public void gridChrome() throws MalformedURLException{
 		//System.setProperty("webdriver.edge.driver", "./driver/edge.exe");
 		//new DesiredCapabilities();
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setBrowserName("chrome");
 		dc.setPlatform(Platform.WINDOWS);
-		
+
 		RemoteWebDriver driver = new RemoteWebDriver(
-				new URL("http://192.168.1.32:4444/wd/hub"), dc);
+				new URL("http://localhost:4477/wd/hub"), dc);
+		driver.get("https://www.google.com");
+	}*/
+	@Test
+	public void gridIE() throws MalformedURLException{
+		//System.setProperty("webdriver.edge.driver", "./driver/edge.exe");
+		//new DesiredCapabilities();
+		DesiredCapabilities dc = new DesiredCapabilities();
+		dc.setBrowserName("internet explorer");
+		dc.setPlatform(Platform.WINDOWS);
+
+		RemoteWebDriver driver = new RemoteWebDriver(
+				new URL("http://localhost:4477/wd/hub"), dc);
 		driver.get("https://www.google.com");
 	}
-*/}
+}
