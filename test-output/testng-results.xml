@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55867" started-at="2018-02-03T06:46:32Z" finished-at="2018-02-03T06:47:28Z">
+  <suite name="Default suite" duration-ms="44811" started-at="2018-02-03T07:22:56Z" finished-at="2018-02-03T07:23:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55867" started-at="2018-02-03T06:46:32Z" finished-at="2018-02-03T06:47:28Z">
-      <class name="challengeDemo.UploadUsingFireFox">
-        <test-method status="PASS" signature="sma()[pri:0, instance:challengeDemo.UploadUsingFireFox@1c62251]" name="sma" duration-ms="55794" started-at="2018-02-03T12:16:32Z" finished-at="2018-02-03T12:17:28Z">
+    <test name="Default test" duration-ms="44811" started-at="2018-02-03T07:22:56Z" finished-at="2018-02-03T07:23:41Z">
+      <class name="challengeDemo.AlertSnap">
+        <test-method status="PASS" signature="alertSnap()[pri:0, instance:challengeDemo.AlertSnap@1fa1d9b]" name="alertSnap" duration-ms="44666" started-at="2018-02-03T12:52:56Z" finished-at="2018-02-03T12:53:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sma -->
-      </class> <!-- challengeDemo.UploadUsingFireFox -->
+        </test-method> <!-- alertSnap -->
+      </class> <!-- challengeDemo.AlertSnap -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
