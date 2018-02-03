@@ -1,4 +1,6 @@
-package leaf.Lead;
+package challengeDemo;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -8,19 +10,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.LocalFileDetector;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 import org.testng.annotations.Test;
 
-public class UploadUsingFF  {
+public class UploadUsingFireFox  {
 	@Test
-	public void sma() throws InterruptedException, FindFailed {
-		System.setProperty("webdriver.gecko.driver", "./driver/gecko.exe");
-		//System.out.println("UploadUsingFF.sma()");
+	public void sma() throws InterruptedException, FindFailed, MalformedURLException {
+		System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
 		FirefoxDriver driver = new FirefoxDriver();
-		/*System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();*/
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://smacar.com/studio"); 
@@ -35,28 +39,17 @@ public class UploadUsingFF  {
 		driver.findElementByXPath("(//p[@class='text_flow'])[1]").click();
 
 		driver.findElementByXPath("(//div[@class='card small']//div)[1]").click();
-		//driver.findElementById("newTargetName").sendKeys("Marker");
-		//Thread.sleep(3000);	
+		Thread.sleep(3000);	
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		js.executeScript("document.getElementsByClassName('dz-hidden-input')[0].style.visibility='visible';");
-		System.out.println(js.executeScript("return document.getElementsByClassName('dz-hidden-input')[0].style.visibility;"));
-		driver.findElementByXPath("//input[@type='file']")
-		.sendKeys("E:\\Koushik\\Opentaps\\snap\\snap.png");
-		driver.findElementById("submit-all").click();
-		
-		
-		
-		
-		
-		
-		
-		/*Screen screen = new Screen();
-
-		Pattern fileNameInput = new Pattern("E:\\FileName.PNG");
-		Pattern openButton = new Pattern("E:\\Open.PNG");
-		screen.wait(fileNameInput);
-		screen.type(fileNameInput, "E:\\Koushik\\Opentaps\\snap\\snap.png");
-		screen.click(openButton);*/
-		}
+		Thread.sleep(2000);
+		String path = "E:\\a.jpg";
+		WebElement ele = driver.findElementByXPath("//input[@type='file']");
+		ele.sendKeys(path);
+	/*	LocalFileDetector detect = new LocalFileDetector();
+		((RemoteWebElement)ele).setFileDetector(detect);
+		ele.sendKeys(detect.getLocalFile(path).getAbsolutePath());*/
+		Thread.sleep(8000);
+		driver.findElementByXPath("//*[@id='submit-all']").click();
+	}
 }
-	
