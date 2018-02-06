@@ -12,11 +12,14 @@ public class Franklin {
 		driver.get("https://www.franklintempleton.com/");
 		
 		//using link text - wont work
+		driver.findElementByLinkText("Close").click();
+		
+		// --- Or using the text visible in webPage-->>>	
 		//driver.findElementByLinkText("Close").click();
 		
 		
 		// Using Xpath
-		driver.findElementByXPath("//a[text()='Close']").click();
+		//driver.findElementByXPath("//a[text()='Close']").click();
 	}
 
 }
