@@ -1,5 +1,4 @@
 package challengeDemo;
-
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
