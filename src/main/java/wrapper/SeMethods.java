@@ -40,9 +40,10 @@ public class SeMethods implements WdMethods{
 				System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
 				driver = new FirefoxDriver();
 			}*/
-			driver.get(url);
+			
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
+			driver.get(url);
 			System.out.println("Browser "+browser+" Launched successfully");
 		} catch (Exception e) {
 			System.out.println(e);
