@@ -18,8 +18,8 @@ public class ArrayListLearn {
 		
 		
 		System.out.println(al);
-		Iterator<String> iter = al.iterator();
 		
+		Iterator<String> iter = al.iterator();		
 		while(iter.hasNext()){
 			System.out.println(iter.next());
 		}

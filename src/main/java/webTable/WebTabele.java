@@ -33,7 +33,6 @@ public class WebTabele {
 			ls.add(text);
 		}
 		Collections.sort(ls);
-		System.out.println(ls.contains("S"));
 		
 		driver.findElementByXPath("//a[text()='Train Name']").click();
 		List<String> newLS = new ArrayList<String>();
