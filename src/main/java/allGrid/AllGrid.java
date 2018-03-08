@@ -7,6 +7,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class AllGrid {
@@ -62,11 +63,17 @@ public class AllGrid {
 		//System.setProperty("webdriver.edge.driver", "./driver/edge.exe");
 		//new DesiredCapabilities();
 		DesiredCapabilities dc = new DesiredCapabilities();
-		dc.setBrowserName("internet explorer");
+		dc.setBrowserName("chrome");
 		dc.setPlatform(Platform.WINDOWS);
 
 		RemoteWebDriver driver = new RemoteWebDriver(
-				new URL("http://localhost:4477/wd/hub"), dc);
+				new URL("http://127.0.0.1:8080/wd/hub"), dc);
 		driver.get("https://www.google.com");
+		driver.close();
 	}
+	/*@AfterMethod
+	public void closebrowser() {
+		driver.qui
+
+	}*/
 }
