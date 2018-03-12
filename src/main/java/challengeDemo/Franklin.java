@@ -15,7 +15,7 @@ public class Franklin {
 		driver.findElementByLinkText("Close").click();
 		
 		// --- Or using the text visible in webPage-->>>	
-		//driver.findElementByLinkText("Close").click();
+		//driver.findElementByLinkText("CLOSE").click();
 		
 		
 		// Using Xpath
