@@ -25,7 +25,7 @@ public class DownloadAutoIt {
 		WebElement fileName = driver.findElement(By.xpath("//span[@class='filename']"));/* = driver.findElementByXPath("//span[@class='filename']");*/
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(fileName));
 	//	wait.pollingEvery(10, TimeUnit.SECONDS);
-		wait.until(ExpectedConditions.elementToBeClickable(fileName));
+		//wait.until(ExpectedConditions.elementToBeClickable(fileName));
 		System.out.println(fileName.getText());
 
 	}
