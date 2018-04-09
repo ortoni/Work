@@ -1,6 +1,7 @@
 package wdMethods;
 
 import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
@@ -39,9 +40,10 @@ public interface WdMethods {
 		 * @param ele   - The Webelement (text field) in which the data to be entered
 		 * @param data  - The data to be sent to the webelement
 		 * @author Babu - TestLeaf
+		 * @param tab 
 		 * @throws ElementNotVisibleException		 * 
 		 */
-		public void type(WebElement ele, String data) ;
+	
 		
 		/**
 		 * This method will click the element and take snap

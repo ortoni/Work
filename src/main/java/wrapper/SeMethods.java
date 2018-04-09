@@ -12,8 +12,11 @@ import javax.annotation.processing.FilerException;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotSelectableException;
 import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.InvalidElementStateException;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchFrameException;
@@ -31,10 +34,29 @@ public class SeMethods implements WdMethods{
 	WebElement ele = null;
 	long i = 1;
 	Random ran = new Random();
+	public void typeWithTab(WebElement ele, String data) {
+		try {
+			ele.clear();
+			ele.sendKeys(data, Keys.TAB);
+			
+		} catch (InvalidElementStateException e) {
+			
+		} catch (WebDriverException e) {
+			
+		}
+	}
+	public  void webTable(WebElement table, int rowNum) {
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		System.out.println("Totla no.of Rows = "+rows.size());
+		System.out.println("Trains Names:");
+		for (WebElement eachrow : rows) {
+			System.out.println(eachrow.findElements(By.tagName("td")).get(rowNum).getText());
+		}
+	}
 	public void startApp(String browser, String url) throws IOException {
 		try {
 			if (browser.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+				//System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 				driver = new ChromeDriver();
 			} /*else if (browser.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
