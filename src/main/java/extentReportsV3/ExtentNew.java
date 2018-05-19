@@ -19,17 +19,19 @@ public class ExtentNew {
 		report.attachReporter(htmlReporter);
 		
 		//report.setSystemInfo("Name", "koushik");
-		report.setSystemInfo("System", "TestLeaf");
+	/*	report.setSystemInfo("System", "TestLeaf");
 		report.setSystemInfo("Environment", "Learning Extent");
 		report.setSystemInfo("User Name", "Koushik Chatterjee");
 
 		htmlReporter.config().setDocumentTitle(title);
 		htmlReporter.config().setReportName(ReportName);
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
-		htmlReporter.config().setTheme(Theme.DARK);
+		htmlReporter.config().setTheme(Theme.DARK);*/
 		return report;
 
 	}
+	
+	 
 
 	public void logTest(String status, String desc){
 		test = report.createTest("CRM");
@@ -52,8 +54,12 @@ public class ExtentNew {
 			break;
 		}
 	}
+	
+	
+
 
 	public void endReport(){
+		logTest("Pass", "");
 		report.removeTest(test);
 		report.flush();
 	}
