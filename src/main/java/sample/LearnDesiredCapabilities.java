@@ -30,6 +30,7 @@ public class LearnDesiredCapabilities {
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		capability.setBrowserName("chrome");
 		capability.setPlatform(Platform.XP);
+		
 
 		/*driver = new RemoteWebDriver(new URL(baseUrl),capability);*/
 		driver.manage().window().maximize();
